@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: black;
+                top: -20px;
+                left: 0px;
+                transform: scale(0.5);
+            }
+
+            25% {
+                background-color: red;
+                top: 270px;
+                left: 105px;
+                transform: scale(1);
+            }
+
+            50% {
+                background-color: sandybrown;
+                top: -20px;
+                left: 210px;
+                transform: scale(0.5);
+            }
+
+            75% {
+                background-color: seagreen;
+                top: 270px;
+                left: 315px;
+                transform: scale(1);
+            }
+
+            100% {
+                background-color: slateblue;
+                top: -20px;
+                left: 420px;
+                transform: scale(0.5);
+            }
+        }
+
+        .stage {
+            width: 500px;
+            height: 350px;
+            background-color: yellowgreen;
+
+        }
+
+        .football {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            background-color: black;
+            position: relative;
+            animation: sliding 5s ease-in-out .5s infinite alternate;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animision</h1>
+    <div class="stage">
+        <div class="football"></div>
+    </div>
+</body>
+
+</html>
